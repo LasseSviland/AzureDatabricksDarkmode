@@ -1,0 +1,82 @@
+@import "./variables";
+
+body .new-notebook.command.mainCommand .CodeMirror.cm-s-eclipse-focus {
+  background: $code-cell-background;
+  color: $primary-text-color;
+}
+.CodeMirror-selected {
+  background: $code-cell-background-selected;
+}
+.new-notebook.command.mainCommand .command-text {
+  border-color: $border-color;
+}
+.CodeMirror.cm-s-eclipse-focus {
+  .CodeMirror-gutters {
+    background: $gutters;
+    border-color: $border-color;
+    width: 30px !important;
+  }
+  .CodeMirror-linenumber {
+    color: $line-numbers;
+  }
+  .CodeMirror-line {
+    padding-left: 5px !important;
+  }
+  .CodeMirror-cursor {
+    border-left: 1px solid $cm-cursor;
+  }
+  span.cm-comment {
+    color: $cm-comment;
+  }
+  span.cm-atom {
+    color: $cm-atom;
+  }
+  span.cm-number {
+    color: $cm-number;
+  }
+  span.cm-property,
+  span.cm-attribute {
+    color: $cm-property;
+  }
+  span.cm-keyword {
+    color: $cm-keyword;
+  }
+  span.cm-string {
+    color: $cm-string;
+  }
+  span.cm-variable {
+    color: $cm-variable;
+  }
+  span.cm-variable-2 {
+    color: $cm-variable-2;
+  }
+  span.cm-def {
+    color: $cm-def;
+  }
+  span.cm-bracket {
+    color: $cm-bracket;
+  }
+  span.cm-operator {
+    color: $cm-operator;
+  }
+  span.cm-tag {
+    color: $cm-tag;
+  }
+
+  span.cm-builtin {
+    color: $cm-builtin;
+  }
+  span.cm-link {
+    color: $cm-link;
+  }
+  span.cm-error {
+    background: $cm-error-background;
+    color: $cm-error-color;
+  }
+  .CodeMirror-activeline-background {
+    background: $cm-active-line;
+  }
+  .CodeMirror-matchingbracket {
+    color: $cm-matching-bracket;
+  }
+}

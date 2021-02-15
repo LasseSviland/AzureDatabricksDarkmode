@@ -1,0 +1,67 @@
+$primary-text-color: #d5d5d5 !important;
+$secondary-text-color: #c7c7c7 !important;
+$title-text-color: #fff !important;
+
+$primary-background-color: #2c2b2b !important;
+$secondary-background-color: #272727 !important;
+
+$icon-color: #fff !important;
+$icon-color-ok: #10b36b !important;
+$icon-color-inactive: #6b6b6b !important;
+$icon-color-error: #f05e57 !important;
+
+$border-color: #555 !important;
+$border-focused-color: #d5d5d5 !important;
+
+// Code style
+$code-cell-background: #1e1e1e !important;
+$code-cell-background-selected: #37474f !important;
+
+$gutters: $code-cell-background;
+$line-numbers: $primary-text-color;
+
+$cm-cursor: orange !important;
+$cm-operator: #d4d4d4 !important;
+$cm-comment: #6aa94f !important;
+$cm-atom: #fff !important;
+$cm-number: #b5cea8 !important;
+$cm-property: #aed9f0 !important;
+$cm-builtin: #aed9f0 !important;
+$cm-keyword: #c586c0 !important;
+$cm-string: #ce9178 !important;
+$cm-variable: #d4d4d4 !important;
+$cm-variable-2: #db6b6b !important;
+$cm-def: orange !important;
+$cm-bracket: #fff !important;
+$cm-tag: #fff !important;
+$cm-link: #fff !important;
+$cm-error-background: red !important;
+$cm-error-color: #fff !important;
+$cm-matching-bracket: orange !important;
+$cm-active-line: #fff !important;
+
+@mixin primary {
+  background-color: $primary-background-color;
+  background: $primary-background-color;
+  color: $primary-text-color;
+}
+
+@mixin secondary {
+  background-color: $secondary-background-color;
+  background: $secondary-background-color;
+  color: $secondary-text-color;
+}
+
+@mixin input {
+  @include secondary;
+  border-color: $border-color;
+  span {
+    @include secondary;
+  }
+}
+
+@mixin table {
+  background-color: $secondary-background-color;
+  color: $primary-text-color;
+  border-color: $border-color;
+}

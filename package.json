@@ -1,0 +1,18 @@
+{
+  "name": "azure-databricks-darkmode",
+  "version": "0.0.4",
+  "description": "Dark mode for Azure Databricks",
+  "scripts": {
+    "build": "node-sass src/scss/index.scss --output-style compressed -o dist",
+    "zip": "bestzip databricks-dark-mode.zip dist/",
+    "publish": "npm run build && npm run zip",
+    "dev": "node-sass -w src/scss/index.scss -o dist"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "prettier": "^2.0.5",
+    "bestzip": "^2.1.7"
+  }
+}

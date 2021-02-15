@@ -1,0 +1,11 @@
+@import "./variables";
+
+uses-legacy-bootstrap .modal {
+  @include primary;
+  .modal-body,
+  .modal-footer,
+  .modal-header,
+  .dialog-tip {
+    @include primary;
+  }
+}

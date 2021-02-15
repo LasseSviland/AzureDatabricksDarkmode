@@ -1,0 +1,46 @@
+@import "./variables";
+.rv-table-controls {
+  @include primary;
+  border-color: $border-color;
+}
+
+.rv-table,
+.rv-grid-table {
+  @include table;
+
+  .ReactVirtualized__Grid,
+  .ReactVirtualized__Table__row,
+  .ReactVirtualized__Table__headerRow,
+  .ReactVirtualized__Table__headerColumn,
+  .rv-grid-table-cell {
+    @include table;
+  }
+}
+.public_fixedDataTable_hasBottomBorder,
+.public_fixedDataTable_header,
+.public_fixedDataTable_main {
+  @include table;
+}
+
+.public_fixedDataTable_header.fixedDataTableLayout_header
+  .fixedDataTableCellLayout_main.public_fixedDataTableCell_main {
+  @include primary;
+}
+.fixedDataTableLayout_main,
+.public_fixedDataTable_main {
+  .fixedDataTableRowLayout_rowWrapper {
+    .header-cell,
+    .body-cell {
+      @include primary;
+    }
+    .fixedDataTableCellGroupLayout_cellGroup:hover {
+      .body-cell {
+        @include secondary;
+      }
+    }
+  }
+}
+
+.nestify-key {
+  color: #aed9f0 !important;
+}

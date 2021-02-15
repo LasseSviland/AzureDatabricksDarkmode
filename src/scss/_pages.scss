@@ -1,0 +1,25 @@
+@import "./variables";
+body {
+  @include primary;
+  .new-notebook#content,
+  #context-bar,
+  .new-notebook.overallContainer,
+  .new-notebook.command.mainCommand {
+    @include primary;
+  }
+
+  .tb-title {
+    @include primary;
+  }
+
+  .react-tab-view .nav-tabs > .active > a,
+  .react-tab-view .nav-tabs > .active > a:focus,
+  .react-tab-view .nav-tabs > .active > a:hover,
+  .react-tab-view .nav-tabs > li > a:hover {
+    @include secondary;
+  }
+
+  .loading-spinner {
+    @include primary;
+  }
+}

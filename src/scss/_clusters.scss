@@ -1,0 +1,35 @@
+@import "./variables";
+// Cluster settings
+div.clusters-get-page form.clusters-get label,
+div.clusters-create-page div.attribute-section .learn-more,
+div.clusters-edit-page div.attribute-section .learn-more,
+div.clusters-get-page div.attribute-section .learn-more,
+div.job-cluster-page div.attribute-section .learn-more,
+.collapsible-region div.collapsible-header {
+  @include primary;
+}
+
+.clusters-json-viewer-toggle {
+  @include primary;
+}
+// Cluster settings dropdowns
+.css-1r8c618-control,
+.css-1tjd6pa,
+.css-p1yr48,
+.css-6gtbuc,
+.css-1bmncgp-control,
+.css-1wa3eu0-placeholder,
+.css-1o1xctj-singleValue,
+div.clusters-create-page div.attribute-section input,
+div.clusters-edit-page div.attribute-section input,
+div.clusters-get-page div.attribute-section input,
+div.job-cluster-page div.attribute-section input {
+  @include input;
+}
+.css-109onse-indicatorSeparator {
+  border-color: $border-focused-color;
+}
+
+.cluster-edit-header {
+  @include primary;
+}

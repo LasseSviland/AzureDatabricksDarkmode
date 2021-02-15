@@ -1,0 +1,43 @@
+@import "./variables";
+
+.filebrowser-header,
+.panel-title,
+.data-panel-header {
+  background-color: $primary-background-color;
+  color: $title-text-color;
+}
+
+.filetree .ft-panel {
+  @include primary;
+  border-color: $border-color;
+
+  a.filetree-link,
+  a.sidebar-panel-link,
+  .home-folder i,
+  .home-folder span {
+    @include primary;
+  }
+  li.top-link {
+    a.filetree-link,
+    a.sidebar-panel-link {
+      @include secondary;
+    }
+  }
+}
+body {
+  .searchpanel {
+    @include primary;
+  }
+}
+/* Sidebar color */
+.notebook-table-of-contents-sidebar
+  .ant-layout-sider-zero-width-trigger.ant-layout-sider-zero-width-trigger-left {
+  box-shadow: none !important;
+  border-color: $secondary-background-color;
+}
+.notebook-table-of-contents-sidebar {
+  border-color: $border-color;
+}
+.sidebar .sidebar-outer.sidebar--theme-unified .sidebar-main {
+  border: none !important;
+}

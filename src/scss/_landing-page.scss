@@ -1,0 +1,13 @@
+@import "./variables";
+
+.homeview-main {
+  a,
+  i,
+  a:hover,
+  i:hover {
+    @include primary;
+  }
+  .homeview-card-title {
+    @include secondary;
+  }
+}

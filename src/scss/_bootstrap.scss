@@ -1,0 +1,77 @@
+@import "./variables";
+uses-legacy-bootstrap {
+  .btn {
+    @include secondary;
+    border-color: $border-color;
+    text-shadow: none !important;
+  }
+  .dropdown-menu {
+    @include primary;
+    // Inactive
+    li a {
+      @include primary;
+    }
+    // Active
+    .active {
+      a {
+        @include secondary;
+      }
+    }
+    li {
+      a:focus,
+      a:hover {
+        @include secondary;
+      }
+    }
+  }
+  #help-menu span {
+    @include primary;
+  }
+}
+
+input,
+textarea {
+  border: none;
+  @include secondary;
+  &:focus {
+    outline: none;
+  }
+}
+.notebook-command-title input {
+  @include primary;
+  border-radius: 0;
+}
+
+.test--react-select--instance-type__value-container,
+.test--react-select--instance-type__value-container--has-value,
+.test--react-select--instance-type__control,
+.fake-static-input {
+  @include input;
+}
+.context-bar .attach-cluster-select-wrapper {
+  @include secondary;
+  border-color: $border-color;
+}
+
+// .react-select__menu,
+// .react-select__menu-list {
+//   @include input;
+// }
+
+.fa {
+  color: $icon-color;
+  &.status-indicator-icon {
+    &.ok {
+      color: $icon-color-ok;
+    }
+    &.inactive {
+      color: $icon-color-inactive;
+    }
+    &.error {
+      color: $icon-color-ok;
+    }
+    &.ok {
+      color: $icon-color-ok;
+    }
+  }
+}
